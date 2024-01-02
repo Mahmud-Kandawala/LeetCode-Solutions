@@ -6,8 +6,8 @@ class Solution:
         # m = number of elements in nums1
         # n = number of elements in nums2
 
-        #Last index nums1
-        last = m + n - 1
+       
+        last = m + n - 1  #Last index nums1
 
         #Merge in reverse order
         while m > 0 and n > 0:
