@@ -21,7 +21,6 @@ class Solution:
 
         
 #Fill nums1 with leftover nums2, this means nums1's elements have been completely merged, and only nums2's elements are left to be placed in nums1. This is done in the following while loop:
-
         while n > 0:
             nums1[last] = nums2[n - 1] #Each element from nums2 is placed in the corresponding position in nums1, and both
             n, last = n - 1, last - 1 #n and last are decremented to move to the previous elements     
