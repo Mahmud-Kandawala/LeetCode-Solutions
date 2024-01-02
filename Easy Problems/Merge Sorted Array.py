@@ -9,8 +9,8 @@ class Solution:
        
         last = m + n - 1  #Last index nums1
 
-        #Merge in reverse order
-        while m > 0 and n > 0:
+       
+        while m > 0 and n > 0: #Merge in reverse order
             if nums1[m - 1] > nums2[n - 1]: 
                 nums1[last] = nums1[m - 1] #If the current element in nums1 is greater, It is placed at the last position of nums1
                 m -=1 #m is decremented to move to the previous element of nums1
