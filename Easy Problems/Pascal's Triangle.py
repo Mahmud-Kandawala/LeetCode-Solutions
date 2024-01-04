@@ -1,6 +1,6 @@
-
+class Solution:
+    def generate(self, numRows: int) -> List[List[int]]:
         result = [[1]] #Initialized with a list, represents the first row
-
         for i in range(numRows -1): #Iterate, as the first row is already initialized
             temp = [0] + result[-1] + [0] #Starts and ends with 0, and in between, it contains the elements of the last row
             row = []
