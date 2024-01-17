@@ -8,8 +8,6 @@ class Solution:
             if count[n] > maxCount: #If the frequency of n (count[n]) is greater than maxCount 
                 result = n #result is updated to n
             else: 
-                result # Otherwise, result remains unchanged.
+                result #Otherwise, the result remains unchanged.
             maxCount = max(count[n], maxCount) #Is updated to be the larger of its current value or the frequency of n.
         return result
-
-        
