@@ -1,3 +1,6 @@
+# 
+# Follow-up: Could you solve the problem in linear time and in O(1) space?
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         result, count = 0, 0 #Two variables are initialized. result will eventually hold the majority element, and count is used to track the frequency of a potential majority element.
