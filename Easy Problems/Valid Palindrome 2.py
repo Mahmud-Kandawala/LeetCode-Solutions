@@ -11,9 +11,20 @@ class Solution:
 
         while l < r:
             if s[l] != s[r]:
-                skipL = is_palindrome(s, l + 1, r)
-                skipR = is_palindrome(s, l, r - 1)
-                return skipL or skipR
+                skipL = is_palindrome(s, l + 1, r) #Checks the substring excluding the character at 'l'
+                skipR = is_palindrome(s, l, r - 1) #Checks the substring excluding the character at 'r'
+                return skipL or skipR #If either returns True, entire is True
             l, r = l + 1, r - 1
         
         return True
+
+
+"""
+How Skipping Works:
+
+So, skipL = is_palindrome(s, l + 1, r) means we're checking the substring "aca" by calling is_palindrome("abca", 2, 2), 
+effectively skipping 'b' (because we passed l+1, which is 2, to the function, not directly altering l in the original context). 
+It does not mean l and r are at the same position; 
+it means we're checking the substring from the character right after l to r, inclusive.
+
+"""
