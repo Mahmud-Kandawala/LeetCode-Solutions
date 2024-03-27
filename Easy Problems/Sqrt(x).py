@@ -1,7 +1,6 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
         l, r = 0, x
-
         res = 0 #Store the result of the square root
 
         while l <= r: #Continues as long as the r is greater than or equal to l
