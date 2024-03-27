@@ -10,4 +10,4 @@ class Solution:
                 l = m + 1
             else:
                 return m
-        return -1 
+        return -1 #If result not found
