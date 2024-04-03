@@ -54,3 +54,7 @@ Increment L to 2.
 Check if nums[R] in window: 5 is not in window.
 Add nums[R] to window: window = {3, 4, 5}.
 
+The window adjustment logic ensures that only the last k elements are considered 
+for duplicate checking. Since no duplicates within the distance k are found, 
+the method returns False.
+'''
