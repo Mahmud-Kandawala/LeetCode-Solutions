@@ -33,4 +33,23 @@ class Solution:
         head.next = None #This line sets the next reference of the current node to None. This is necessary to avoid forming a cycle in the list. When the recursion reaches the original tail of the list, this ensures the new tail's next pointer is None.
        
         return newHead #The method returns newHead, which is the new head of the reversed linked list.
-       
+
+
+'''
+Pure Code:
+
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+
+        if not head:
+            return None
+        
+        newHead = head
+        if head.next:
+            newHead = self.reverseList(head.next)
+            head.next.next = head 
+        head.next = None
+
+        return newHead 
+        
+'''
