@@ -16,4 +16,17 @@ class Solution:
             curr = nxt #curr is updated to nxt. This moves the curr pointer one step forward to the next node, allowing the loop to continue with the next node in the original list.
         return prev #After the loop completes, prev will be pointing to the new head of the reversed list. The method returns prev.
 
+'''
+Pure Code:
 
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev, curr = None, head
+        
+        while curr:
+            nxt = curr.next 
+            curr.next = prev 
+            prev = curr 
+            curr = nxt 
+        return prev 
+'''
