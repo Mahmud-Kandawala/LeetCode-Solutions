@@ -13,7 +13,8 @@ class Solution:
             fast = fast.next.next
             slow = slow.next
 
-       
+        
+        #reverse second half
         prev = None
         while slow:
             nxt = slow.next
@@ -22,7 +23,7 @@ class Solution:
             slow = nxt
 
 
- 
+        #check palindrome
         left, right = head, prev
         while right:
             if left.val != right.val:
