@@ -16,6 +16,9 @@ class Solution:
 
         self.invertTree(root.left) # Recursively call invertTree
         self.invertTree(root.right) # Recursively call invertTree
+
+# ^ After swapping the children of the current node, it proceeds to do the same for all nodes in the left and right subtrees.   
+        
         return root #Return the new root of the entire tree 
 
         
